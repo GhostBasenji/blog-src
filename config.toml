@@ -1,0 +1,75 @@
+baseURL = "/"
+# title = "Ghost Basenji"
+theme = "anatole"
+
+[params]
+title = "I'm Ghost Basenji"
+author = "Ghost Basenji"
+description = "Notes of a novice programmer"
+profilePicture = "/images/profile.png"
+copyright = "GhostBasenji 2019-{{ YEAR }}"
+displayMode = "light"
+disableThemeSwitcher = true # Theme switcher is enabled by default
+doNotLoadAnimations = true # Animations are loaded by default
+
+singleDateFormat = "Mon, Jan 2, 2006"
+indexDateFormat = "Mon, Jan 2, 2006"
+listDateFormat = "Jan 2"
+
+contentratio = 0.75
+
+readMore = true
+
+
+## Math settings
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+# Syntax highlighting
+pygmentsUseClasses = false
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+
+[[params.socialIcons]]
+icon = "fab fa-telegram"
+title = "telegram"
+url = "https://t.me/ghostbasenji"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:petr.and.vic@gmail.com"
+
+
+
+## Menu items
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Архив"
+  weight = 200
+  identifier = "post"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "Мои проекты"
+  weight = 300
+  identifier = "myprojects"
+  url = "/myprojects/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 400
+  identifier = "about"
+  url = "/about/"
