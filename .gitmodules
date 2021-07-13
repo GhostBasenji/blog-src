@@ -1,0 +1,4 @@
+[submodule "ghostbasenji.github.io"]
+	path = ghostbasenji.github.io
+	url = https://github.com/GhostBasenji/ghostbasenji.github.io.git
+	branch = master
